@@ -7,28 +7,29 @@ Oracle Webapp server OC4J store reversible passwords, encrypted with DES and a f
 dec903 decrypt these passwords. 
 
 INSTALLATION : 
-javac dec903.java
+
+    javac dec903.java
 
 USAGE : 
 
-java dec903 [OPTIONS]
-	 -h help
-	 -f file 		 use this hashes file
-	 hash 			 including {903}
+    java dec903 [OPTIONS]
+    	 -h help
+    	 -f file 		 use this hashes file
+    	 hash 			 including {903}
 
 
 EXAMPLES : 
 
-$ java dec903 {903}aaDNAx2b/w75niUWBXd3kDT8ntGFBEpQd0ocSeUfuX4=
-oracle112      ({903}aaDNAx2b/w75niUWBXd3kDT8ntGFBEpQd0ocSeUfuX4=)
+    $ java dec903 {903}aaDNAx2b/w75niUWBXd3kDT8ntGFBEpQd0ocSeUfuX4=
+    oracle112      ({903}aaDNAx2b/w75niUWBXd3kDT8ntGFBEpQd0ocSeUfuX4=)
 
-$ cat hashes.txt
-{903}aaDNAx2b/w75niUWBXd3kDT8ntGFBEpQd0ocSeUfuX4=
-{903}MpGLyRjOecImXViyEqELeodQcHNnvK1hjR/ybyAKbuA=
+    $ cat hashes.txt
+    {903}aaDNAx2b/w75niUWBXd3kDT8ntGFBEpQd0ocSeUfuX4=
+    {903}MpGLyRjOecImXViyEqELeodQcHNnvK1hjR/ybyAKbuA=
 
-$ java dec903 -f hashes.txt
-acle112      ({903}aaDNAx2b/w75niUWBXd3kDT8ntGFBEpQd0ocSeUfuX4=)
-oracle112      ({903}MpGLyRjOecImXViyEqELeodQcHNnvK1hjR/ybyAKbuA=)
+    $ java dec903 -f hashes.txt
+    oracle112      ({903}aaDNAx2b/w75niUWBXd3kDT8ntGFBEpQd0ocSeUfuX4=)
+    oracle112      ({903}MpGLyRjOecImXViyEqELeodQcHNnvK1hjR/ybyAKbuA=)
 
 
 
